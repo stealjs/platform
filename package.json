@@ -1,5 +1,5 @@
 {
-  "name": "done-platform",
+  "name": "steal-platform",
   "version": "0.0.1",
   "description": "Detect which platform is running",
   "main": "platform.js",
