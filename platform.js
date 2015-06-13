@@ -4,11 +4,13 @@ define(["@loader"], function(loader){
 	// Local copy of Node require
 	var nodeRequire = loader._nodeRequire;
 
+	var isNode = typeof process === "object" &&
+			{}.toString.call(process) === "[object process]"
+
 	var platform = {
 
 		// Node.js
-		isNode: typeof process === "object" &&
-			{}.toString.call(process) === "[object process]",
+		isNode: isNode,
 
 		// Cordova
 		isCordova: !!global.cordova,
