@@ -1,6 +1,6 @@
 {
   "name": "steal-platform",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Detect which platform is running",
   "main": "platform.js",
   "scripts": {
