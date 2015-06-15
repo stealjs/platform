@@ -8,7 +8,7 @@ define(["@loader"], function(loader){
 	var isNode = typeof process === "object" &&
 			{}.toString.call(process) === "[object process]";
 
-	var ua = navigator.userAgent;
+	var ua = typeof navigator !== "undefined" ? navigator.userAgent : "";
 
 	var isiOS = /iPhone OS/.test(ua);
 	var isAndroid = /Android/.test(ua);
